@@ -1,0 +1,189 @@
+.diagnostic-history-card {
+  @include Card;
+  min-width: 76.6rem;
+  height: 67.3rem;
+  margin-top: 3.2rem;
+  &__header {
+    @include centerContent;
+
+    &--title {
+      @include CardTitle;
+    }
+  }
+
+  &__body {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    // BLOOD PRESSURE CARD
+    .blood-pressure-card {
+      @include Card($Color_light_purple, 1.6rem);
+      height: 29.8rem;
+      margin-top: 4rem;
+
+      &__content {
+        display: flex;
+        gap: 3.9rem;
+
+        .blood-pressure-chart {
+       
+          &__header {
+            @include centerContent;
+
+            &--title {
+              @include InnerCardTitle;
+            }
+
+            &--chart-filter {
+              display: flex;
+              gap: 1.6rem;
+              margin-right: 2.5rem;
+
+              .filter-title {
+                @include regular--14px;
+              }
+            }
+          }
+
+
+            
+         #myChart{
+          width: 41.7rem;
+          height: 18.7rem;
+          margin-top: 2.8rem;
+         }
+
+          &__chart {
+          }
+        }
+
+        .blood-pressure-statics {
+            width: 100%;
+          &__systolic {
+            &--title {
+              @include Bold--14px;
+              position: relative;
+              padding-left: 2rem;
+              &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1.4rem;
+                height: 1.4rem;
+                border-radius: 50%;
+                background-color: $color_purple_deep;
+              }
+            }
+            &--degree {
+              @include Bold--22px;
+              margin-top: 0.8rem;
+            }
+
+            &--average {
+              margin-top: 0.8rem;
+              @include centerContent;
+              justify-content: unset;
+              gap: 0.8rem;
+
+              .average-text {
+                @include regular--14px;
+              }
+            }
+
+            .vertical-line {
+              background-color: #cbc8d4;
+              margin-top: 1.6rem;
+              width: 100%;
+              height: 0.1rem;
+              display: inline-block;
+            }
+          }
+
+          &__diatolic {
+            margin-top: 0.6rem;
+
+            &--title {
+                @include Bold--14px;
+                position: relative;
+                padding-left: 2rem;
+                &:before {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  width: 1.4rem;
+                  height: 1.4rem;
+                  border-radius: 50%;
+                  background-color: $color_blueviolet_1;
+                }
+              }
+              &--degree {
+                @include Bold--22px;
+                margin-top: 0.8rem;
+              }
+  
+              &--average {
+                margin-top: 0.8rem;
+                @include centerContent;
+                justify-content: unset;
+                gap: 0.8rem;
+  
+                .average-text {
+                  @include regular--14px;
+                }
+              }
+          }
+        }
+      }
+    }
+
+    //RATE CARDS
+    .rate-cards{
+        @include centerContent;
+        gap: 2.1rem;
+
+        &__repository-rate{
+            @include Card($color_light_cyan , 1.6rem)
+        }
+
+        &__temprature-rate{
+            @include Card($color_light_danger , 1.6rem)
+        }
+
+        &__heart-rate{
+            @include Card($color_light_danger_2 , 1.6rem);
+            &--status{
+              @include centerContent;
+              justify-content: unset;
+              gap: .8rem;
+            }
+        }
+
+        &__repository-rate , &__temprature-rate , &__heart-rate{
+            width: 22.8rem;
+            height: 24.4rem;
+
+            &--name{
+                @include Medium--16px;
+                margin-top: 1.6rem;
+            }
+
+            &--degree{
+                @include Extra-Bold--30px;
+            }
+
+            &--status {
+              
+                @include regular--14px;
+                margin-top: 1.7rem;
+            }
+        }
+    }
+
+  }
+}

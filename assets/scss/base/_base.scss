@@ -1,0 +1,31 @@
+@import '../abstract/variables';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+body{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: $color_text_primary;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+  width: 160rem;
+  height: 119.5rem;
+  background-color: $color_bg;
+  padding: 1.8rem;
+  margin: 0 auto;
+}

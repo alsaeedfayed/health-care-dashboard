@@ -1,0 +1,71 @@
+.Dashboard {
+  &__header {
+    width: 156.4rem;
+    height: 7.2rem;
+    background-color: #fff;
+    border-radius: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 3.2rem;
+
+    .list-items {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      list-style: none;
+
+      &__item {
+        display: flex;
+        
+
+        &--active {
+            background-color: $ActiveState_bg_1;
+            border-radius: 4.1rem;
+            padding: 1.1rem 1.6rem;
+        }
+
+        .item-text {
+          @include Bold--14px;
+          margin-left: 0.9rem;
+        }
+
+       
+      }
+    }
+
+    .user{
+        display: flex;
+        gap: .8rem;
+        align-items: center;
+
+        &__data{
+            position: relative;
+            &--user-name{
+                @include Bold--14px
+            }
+
+            &--user-info{
+                @include Secondary-info
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                border-right: 1px solid #EDEDED;
+                height: 100%;
+                top: 0;
+                right: -1.2rem;
+            
+               
+            }
+        }
+
+        &__action{
+            margin-left: 1.2rem;
+            display: flex;
+            gap: 1.2rem;
+        }
+    }
+  }
+}

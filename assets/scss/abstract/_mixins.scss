@@ -1,0 +1,115 @@
+@mixin Bold--14px {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: $color_text_primary;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+}
+
+@mixin regular--14px {
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: $color_text_primary;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    line-height: 1.9rem;
+  }
+
+@mixin Bold--24px {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: $color_text_primary;
+  letter-spacing: 0;
+  line-height: 22;
+}
+
+@mixin Medium--16px {
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: $color_text_primary;
+  letter-spacing: 0;
+  line-height: 2.2rem;
+  text-transform: capitalize;
+}
+
+@mixin Extra-Bold--30px {
+  font-weight: $Manrobe_extra_bold;
+  font-size: 3rem;
+  color: $color_text_primary;
+  letter-spacing: 0;
+  line-height: 4.1rem;
+}
+
+@mixin Regular--12px {
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: $color_text_primary;
+  letter-spacing: 0;
+  line-height: 17;
+}
+
+@mixin InnerCardTitle {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: $color_text_primary;
+  letter-spacing: 0;
+  line-height: 2.4rem;
+  text-transform: capitalize;
+}
+
+@mixin Bold--22px {
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: $color_text_primary;
+  letter-spacing: 0;
+  line-height: 3rem;
+  text-transform: capitalize;
+}
+
+@mixin Medium--14px {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: $color_text_primary;
+  letter-spacing: 0;
+  line-height: 1.9rem;
+  text-transform: capitalize;
+}
+
+@mixin Regular--13px {
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: $color_text_primary;
+  letter-spacing: 0;
+  line-height: 1.8rem;
+  text-transform: capitalize;
+}
+
+@mixin Secondary-info {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: $color_text_secodary;
+  letter-spacing: 0;
+  line-height: 1.9rem;
+  text-transform: capitalize;
+}
+
+@mixin CardTitle {
+  font-weight: $Manrobe_extra_bold;
+  font-size: 2.4rem;
+  color: $color_text_primary;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+@mixin Card($bgColro: $Color_White, $paddingSize: 2rem) {
+  background-color: $bgColro;
+  padding: $paddingSize;
+  border-radius: 1.6rem;
+}
+
+@mixin centerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

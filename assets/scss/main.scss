@@ -1,0 +1,21 @@
+
+@import './base/base';
+@import './base/_typography.scss';
+@import './base/_utils.scss';
+
+@import './abstract/_mixins.scss';
+@import './abstract/_variables.scss';
+
+//layout
+@import './layout/header';
+@import './layout/main-content';
+
+//components
+@import './components/patients_card';
+@import './components/diagnostic_history';
+@import './components/diagnostic_list';
+@import './components/jessica';
+@import './components/lab_results';
+
+//fonts
+@import '../fonts/font.scss'

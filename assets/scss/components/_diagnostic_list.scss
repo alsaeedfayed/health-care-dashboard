@@ -1,0 +1,55 @@
+.diagnostic-list-card{
+    @include Card;
+    width: 76.6rem;
+    height: 34.9rem;
+    margin-top: 3.2rem;
+
+    &__header{
+        @include CardTitle;
+    }
+
+    &__body{
+        margin-top: 4rem;
+        height: 25rem;
+        overflow: auto;
+        table{   
+            width: 100%;
+            border-collapse: collapse;
+            thead{
+                background-color: #F6F7F8;
+                tr{
+                    text-align: left;
+                    th{
+                        @include Bold--14px;
+                        padding: 1.5rem 1.6rem;
+                       
+                    }
+                    
+                    th:first-child{
+                       border-top-left-radius: 2.4rem;
+                       border-bottom-left-radius: 2.4rem;
+                    }
+
+                    th:last-child{
+                        border-top-right-radius: 2.4rem;
+                        border-bottom-right-radius: 2.4rem;
+                     }
+                }
+            }
+
+            tbody{
+                tr{
+                    &:not(:last-child){
+                        border-bottom: 1px solid #F6F7F8;
+                    }
+                    td{
+                        padding: 1.6rem 2.1rem;
+                        @include regular--14px
+                    }
+                }
+                
+            }
+              
+        }
+    }
+}

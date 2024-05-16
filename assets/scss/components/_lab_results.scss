@@ -1,0 +1,34 @@
+.lab-results-card {
+  @include Card;
+  width: 36.7rem;
+  height: 29.6rem;
+  margin-top: 3.2rem;
+
+  &__header {
+    @include CardTitle;
+  }
+
+  &__body {
+   
+    height: 21rem;
+    overflow: auto;
+    margin: 1.6rem;
+
+    .list-items {
+      &__item {
+        height: 4rem;
+        margin-bottom: 0.5rem;
+        padding: 1.6rem;
+        @include centerContent;
+
+        &--text {
+          @include Regular--13px;
+        }
+
+        &--active{
+            background-color: $color_bg;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&family=Manrope:wght@200..800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: #072635;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 160rem;
+  height: 119.5rem;
+  background-color: #F6F7F8;
+  padding: 1.8rem;
+  margin: 0 auto;
+}
+
+.col-middle {
+  margin-left: 3.6rem;
+}
+
+.col-right {
+  margin-left: 3.3rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 10rem;
+  background-color: #E3E4E6;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  height: 10rem;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #072635;
+  border-radius: 6px;
+  height: 2rem;
+  width: 0.6rem;
+}
+
+.Dashboard__header {
+  width: 156.4rem;
+  height: 7.2rem;
+  background-color: #fff;
+  border-radius: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3.2rem;
+}
+.Dashboard__header .list-items {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+.Dashboard__header .list-items__item {
+  display: flex;
+}
+.Dashboard__header .list-items__item--active {
+  background-color: #01F0D0;
+  border-radius: 4.1rem;
+  padding: 1.1rem 1.6rem;
+}
+.Dashboard__header .list-items__item .item-text {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+  margin-left: 0.9rem;
+}
+.Dashboard__header .user {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.Dashboard__header .user__data {
+  position: relative;
+}
+.Dashboard__header .user__data--user-name {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+}
+.Dashboard__header .user__data--user-info {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #707070;
+  letter-spacing: 0;
+  line-height: 1.9rem;
+  text-transform: capitalize;
+}
+.Dashboard__header .user__data::after {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #EDEDED;
+  height: 100%;
+  top: 0;
+  right: -1.2rem;
+}
+.Dashboard__header .user__action {
+  margin-left: 1.2rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.Dashboard__main {
+  display: flex;
+}
+
+.patients-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  min-width: 36.7rem;
+  height: 105.4rem;
+  margin-top: 3.2rem;
+}
+.patients-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.patients-card__header--title {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+.patients-card .card-body-wrapper {
+  box-sizing: border-box;
+  margin: -2rem;
+  margin-top: 4rem;
+  height: 96rem;
+  overflow-y: scroll;
+}
+.patients-card__body {
+  margin: 2rem;
+}
+.patients-card__body .patient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+.patients-card__body .patient__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+}
+.patients-card__body .patient__info--user-name {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+}
+.patients-card__body .patient__info--details {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #707070;
+  letter-spacing: 0;
+  line-height: 1.9rem;
+  text-transform: capitalize;
+}
+.diagnostic-history-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  min-width: 76.6rem;
+  height: 67.3rem;
+  margin-top: 3.2rem;
+}
+.diagnostic-history-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.diagnostic-history-card__header--title {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+.diagnostic-history-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.diagnostic-history-card__body .blood-pressure-card {
+  background-color: #F4F0FE;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+  height: 29.8rem;
+  margin-top: 4rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content {
+  display: flex;
+  gap: 3.9rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-chart__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-chart__header--title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #072635;
+  letter-spacing: 0;
+  line-height: 2.4rem;
+  text-transform: capitalize;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-chart__header--chart-filter {
+  display: flex;
+  gap: 1.6rem;
+  margin-right: 2.5rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-chart__header--chart-filter .filter-title {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-chart #myChart {
+  width: 41.7rem;
+  height: 18.7rem;
+  margin-top: 2.8rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics {
+  width: 100%;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__systolic--title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+  position: relative;
+  padding-left: 2rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__systolic--title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background-color: #E66FD2;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__systolic--degree {
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #072635;
+  letter-spacing: 0;
+  line-height: 3rem;
+  text-transform: capitalize;
+  margin-top: 0.8rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__systolic--average {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: unset;
+  gap: 0.8rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__systolic--average .average-text {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__systolic .vertical-line {
+  background-color: #cbc8d4;
+  margin-top: 1.6rem;
+  width: 100%;
+  height: 0.1rem;
+  display: inline-block;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__diatolic {
+  margin-top: 0.6rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__diatolic--title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+  position: relative;
+  padding-left: 2rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__diatolic--title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background-color: #8C6FE6;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__diatolic--degree {
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #072635;
+  letter-spacing: 0;
+  line-height: 3rem;
+  text-transform: capitalize;
+  margin-top: 0.8rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__diatolic--average {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: unset;
+  gap: 0.8rem;
+}
+.diagnostic-history-card__body .blood-pressure-card__content .blood-pressure-statics__diatolic--average .average-text {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+}
+.diagnostic-history-card__body .rate-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.1rem;
+}
+.diagnostic-history-card__body .rate-cards__repository-rate {
+  background-color: #E0F3FA;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+}
+.diagnostic-history-card__body .rate-cards__temprature-rate {
+  background-color: #FFE6E9;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+}
+.diagnostic-history-card__body .rate-cards__heart-rate {
+  background-color: #FFE6F1;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+}
+.diagnostic-history-card__body .rate-cards__heart-rate--status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: unset;
+  gap: 0.8rem;
+}
+.diagnostic-history-card__body .rate-cards__repository-rate, .diagnostic-history-card__body .rate-cards__temprature-rate, .diagnostic-history-card__body .rate-cards__heart-rate {
+  width: 22.8rem;
+  height: 24.4rem;
+}
+.diagnostic-history-card__body .rate-cards__repository-rate--name, .diagnostic-history-card__body .rate-cards__temprature-rate--name, .diagnostic-history-card__body .rate-cards__heart-rate--name {
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: #072635;
+  letter-spacing: 0;
+  line-height: 2.2rem;
+  text-transform: capitalize;
+  margin-top: 1.6rem;
+}
+.diagnostic-history-card__body .rate-cards__repository-rate--degree, .diagnostic-history-card__body .rate-cards__temprature-rate--degree, .diagnostic-history-card__body .rate-cards__heart-rate--degree {
+  font-weight: 800;
+  font-size: 3rem;
+  color: #072635;
+  letter-spacing: 0;
+  line-height: 4.1rem;
+}
+.diagnostic-history-card__body .rate-cards__repository-rate--status, .diagnostic-history-card__body .rate-cards__temprature-rate--status, .diagnostic-history-card__body .rate-cards__heart-rate--status {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+  margin-top: 1.7rem;
+}
+
+.diagnostic-list-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  width: 76.6rem;
+  height: 34.9rem;
+  margin-top: 3.2rem;
+}
+.diagnostic-list-card__header {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+.diagnostic-list-card__body {
+  margin-top: 4rem;
+  height: 25rem;
+  overflow: auto;
+}
+.diagnostic-list-card__body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.diagnostic-list-card__body table thead {
+  background-color: #F6F7F8;
+}
+.diagnostic-list-card__body table thead tr {
+  text-align: left;
+}
+.diagnostic-list-card__body table thead tr th {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+  padding: 1.5rem 1.6rem;
+}
+.diagnostic-list-card__body table thead tr th:first-child {
+  border-top-left-radius: 2.4rem;
+  border-bottom-left-radius: 2.4rem;
+}
+.diagnostic-list-card__body table thead tr th:last-child {
+  border-top-right-radius: 2.4rem;
+  border-bottom-right-radius: 2.4rem;
+}
+.diagnostic-list-card__body table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #F6F7F8;
+}
+.diagnostic-list-card__body table tbody tr td {
+  padding: 1.6rem 2.1rem;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+}
+
+.jessica-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  width: 36.7rem;
+  height: 74rem;
+  margin-top: 1.8rem;
+}
+.jessica-card__jessica-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin: 1.2rem 6.4rem 2.4rem 6.3rem;
+}
+.jessica-card__name {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  margin: 0 7.2rem 3.2rem 8.1rem;
+}
+.jessica-card__list-items {
+  list-style: none;
+  margin-bottom: 4rem;
+}
+.jessica-card__list-items--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: unset;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+.jessica-card__list-items--item .parent-info {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  line-height: 1.9rem;
+  text-transform: capitalize;
+}
+.jessica-card__list-items--item .sub-info {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+}
+.jessica-card__button {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  line-height: 1.9rem;
+  width: 22rem;
+  height: 4.1rem;
+  background-color: #01F0D0;
+  border-radius: 4.1rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 4.7rem;
+}
+
+.lab-results-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  width: 36.7rem;
+  height: 29.6rem;
+  margin-top: 3.2rem;
+}
+.lab-results-card__header {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #072635;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+.lab-results-card__body {
+  height: 21rem;
+  overflow: auto;
+  margin: 1.6rem;
+}
+.lab-results-card__body .list-items__item {
+  height: 4rem;
+  margin-bottom: 0.5rem;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lab-results-card__body .list-items__item--text {
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #072635;
+  letter-spacing: 0;
+  line-height: 1.8rem;
+  text-transform: capitalize;
+}
+.lab-results-card__body .list-items__item--active {
+  background-color: #F6F7F8;
+}
+
+/*# sourceMappingURL=main.css.map */

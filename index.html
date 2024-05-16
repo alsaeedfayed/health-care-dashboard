@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Health Care Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="Dashboard">
+        <!-- TODO HEADER -->
+        <header class="Dashboard__header">
+          <div class="logo">
+            <img src="./assets/svgs/TestLogo.svg" alt="" />
+          </div>
+
+          <div class="nav">
+            <ul class="list-items">
+              <li class="list-items__item">
+                <span class="item-icon"
+                  ><img src="./assets/svgs/home.svg" alt="home-icon"
+                /></span>
+                <span class="item-text">overview</span>
+              </li>
+
+              <li class="list-items__item list-items__item--active">
+                <span class="item-icon"
+                  ><img src="./assets/svgs/group.svg" alt="home-icon"
+                /></span>
+                <span class="item-text">patients</span>
+              </li>
+
+              <li class="list-items__item">
+                <span class="item-icon"
+                  ><img src="./assets/svgs/calander.svg" alt="home-icon"
+                /></span>
+                <span class="item-text">schedule</span>
+              </li>
+
+              <li class="list-items__item">
+                <span class="item-icon"
+                  ><img src="./assets/svgs/chat.svg" alt="home-icon"
+                /></span>
+                <span class="item-text">message</span>
+              </li>
+
+              <li class="list-items__item">
+                <span class="item-icon"
+                  ><img src="./assets/svgs/credit-card.svg" alt="home-icon"
+                /></span>
+                <span class="item-text">transactoin</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="user">
+            <div class="user__image">
+              <img src="./assets/images/member2.png" alt="user-image" />
+            </div>
+            <div class="user__data">
+              <p class="user__data--user-name">dr. joe simmon</p>
+              <p class="user__data--user-info">general practitioner</p>
+            </div>
+            <div class="user__action">
+              <img
+                class="user__action--setting"
+                src="./assets/svgs/setting.svg"
+                alt="icon-setting"
+              />
+              <img
+                class="user__action--more"
+                src="./assets/svgs/more-vertical.svg"
+                alt="more-vertical-icon"
+              />
+            </div>
+          </div>
+        </header>
+
+        <main class="Dashboard__main">
+          <!-- LEFT COLUMN -->
+          <div class="col-left">
+            <div class="patients-card">
+              <!-- CARD HEADER -->
+              <div class="patients-card__header">
+                <span class="patients-card__header--title">patients</span>
+                <img
+                  class="patients-card__header--search"
+                  src="./assets/svgs/search.svg"
+                  alt="search"
+                />
+              </div>
+
+              <!-- CARD BODY -->
+              <div class="card-body-wrapper">
+                <div class="patients-card__body">
+                  <!-- PATIENT -->
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="patient">
+                    <div class="patient__info">
+                      <img
+                        class="patient__info--img"
+                        src="./assets/images/member3.png"
+                        alt="member image"
+                      />
+                      <div>
+                        <p class="patient__info--user-name">emily williams</p>
+                        <p class="patient__info--details">femal, 18</p>
+                      </div>
+                    </div>
+
+                    <div class="patient__actions">
+                      <img
+                        src="./assets/svgs/more-horizontal.svg"
+                        alt="more-icon-horizontal"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MIDDLE COLUMN -->
+          <div class="col-middle">
+            <!-- DIAGONSTIC HISTORY CARD  -->
+            <div class="diagnostic-history-card">
+              <!-- CARD HEADER -->
+              <div class="diagnostic-history-card__header">
+                <h1 class="diagnostic-history-card__header--title">
+                  diagnostic history
+                </h1>
+              </div>
+
+              <!-- CARD BODY -->
+              <div class="diagnostic-history-card__body">
+                <!-- BLOOD PRESSURE CARD -->
+                <div class="blood-pressure-card">
+                  <!-- CARD CONTENT -->
+                  <div class="blood-pressure-card__content">
+                    <!-- CHART -->
+                    <div class="blood-pressure-chart">
+                      <div class="blood-pressure-chart__header">
+                        <h1 class="blood-pressure-chart__header--title">
+                          blood pressure
+                        </h1>
+                        <div class="blood-pressure-chart__header--chart-filter">
+                          <span class="filter-title">Last 6 month</span>
+                          <img
+                            src="./assets/svgs/ArrowDown.svg"
+                            alt="arrow down icon"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="blood-pressure-chart__chart">
+                        <canvas id="myChart"></canvas>
+                      </div>
+                    </div>
+
+                    <!-- SYSTOLIC & DIASTOLIC -->
+                    <div class="blood-pressure-statics">
+                      <!-- SYSTOLIC -->
+                      <div class="blood-pressure-statics__systolic">
+                        <h5 class="blood-pressure-statics__systolic--title">
+                          systolic
+                        </h5>
+                        <h5 class="blood-pressure-statics__systolic--degree">
+                          160
+                        </h5>
+                        <div class="blood-pressure-statics__systolic--average">
+                          <span class="average__icon">
+                            <img
+                              src="./assets/svgs/ArrowUp.svg"
+                              alt="arrow up icon"
+                            />
+                          </span>
+                          <span class="average-text">Higer than Average</span>
+                        </div>
+                        <span class="vertical-line"></span>
+                      </div>
+
+                      <!-- DIATOLIC -->
+                      <div class="blood-pressure-statics__diatolic">
+                        <h5 class="blood-pressure-statics__diatolic--title">
+                          diatolic
+                        </h5>
+                        <h5 class="blood-pressure-statics__diatolic--degree">
+                          78
+                        </h5>
+                        <div class="blood-pressure-statics__diatolic--average">
+                          <span class="average__icon">
+                            <img
+                              src="./assets/svgs/ArrowDown.svg"
+                              alt="arrow up icon"
+                            />
+                          </span>
+                          <span class="average-text">Lower than Average</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- RATE CARDS STATISTICS -->
+                <div class="rate-cards">
+
+                    <!-- REPOSITORY -->
+                  <div class="rate-cards__repository-rate">
+                    <img
+                      src="./assets/svgs/respiratory rate.svg"
+                      alt="reposirory rate icon"
+                    />
+                    <p class="rate-cards__repository-rate--name">
+                      repository rate
+                    </p>
+                    <p class="rate-cards__repository-rate--degree">20 bmp</p>
+                    <p class="rate-cards__repository-rate--status">normal</p>
+                  </div>
+
+                  <!-- TEMAPRATURE -->
+                  <div class="rate-cards__temprature-rate">
+                    <img
+                      src="./assets/svgs/temperature.svg"
+                      alt="temprature rate icon"
+                    />
+                    <p class="rate-cards__temprature-rate--name">temprature</p>
+                    <p class="rate-cards__temprature-rate--degree">98.6&#176F</p>
+                    <p class="rate-cards__temprature-rate--status">normal</p>
+                  </div>
+
+                  <!-- HEART RATE -->
+                  <div class="rate-cards__heart-rate">
+                    <img
+                      src="./assets/svgs/HeartBPM.svg"
+                      alt="temprature rate icon"
+                    />
+                    <p class="rate-cards__heart-rate--name">heart rate</p>
+                    <p class="rate-cards__heart-rate--degree">78 bmp</p>
+                    <div class="rate-cards__heart-rate--status heart-rate-st" >
+                        <img src="./assets/svgs/ArrowDown.svg" alt="arrow-down icon">
+                        <span class="text">lower than average</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DIAGONSTIC LIST CARD -->
+            <div class="diagnostic-list-card">
+              <h1 class="diagnostic-list-card__header">daigonstic list</h1>
+              <div class="diagnostic-list-card__body">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>problem/diagnosis</th>
+                      <th>description</th>
+                      <th>status</th>
+                    </tr>
+                  </thead>
+
+                  
+                  <tbody>
+                   
+                    <tr>
+                      <td>hypertension</td>
+                      <td>chronic high blood pressure</td>
+                      <td>unser observation</td>
+                    </tr>
+                    <tr>
+                      <td>hypertension</td>
+                      <td>chronic high blood pressure</td>
+                      <td>inactive</td>
+                    </tr>
+                    <tr>
+                      <td>hypertension</td>
+                      <td>chronic high blood pressure</td>
+                      <td>unser observation</td>
+                    </tr>
+                    <tr>
+                      <td>hypertension</td>
+                      <td>chronic high blood pressure</td>
+                      <td>inactive</td>
+                    </tr>
+                    <tr>
+                      <td>hypertension</td>
+                      <td>chronic high blood pressure</td>
+                      <td>unser observation</td>
+                    </tr>
+                    <tr>
+                      <td>hypertension</td>
+                      <td>chronic high blood pressure</td>
+                      <td>inactive</td>
+                    </tr>
+
+                    <tr>
+                      <td>hypertension</td>
+                      <td>chronic high blood pressure</td>
+                      <td>unser observation</td>
+                    </tr>
+                    <tr>
+                      <td>hypertension</td>
+                      <td>chronic high blood pressure</td>
+                      <td>inactive</td>
+                    </tr>
+               
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="col-right">
+            <!-- JESSICA CARD -->
+            <div class="jessica-card">
+
+                <img id="image" class="jessica-card__jessica-img" alt="jessica image">
+               <p id="name" class="jessica-card__name"></p>
+
+                <ul class="jessica-card__list-items">
+
+                    <li class="jessica-card__list-items--item">
+                        <img src="./assets/images/BirthIcon.png" alt="calander icon">
+                        <div>
+                            <p class="parent-info">date of birth</p>
+                            <p id="birthdate" class="sub-info"></p>
+                        </div>
+                    </li>
+
+                    <li class="jessica-card__list-items--item">
+                        <img src="./assets/images/FemaleIcon.png" alt="femlae icon">
+                        <div>
+                            <p class="parent-info">gender</p>
+                            <p id="gender" class="sub-info"></p>
+                        </div>
+                    </li>
+
+
+                    <li class="jessica-card__list-items--item">
+                        <img src="./assets/images/PhoneIcon.png" alt="phone icon">
+                        <div>
+                            <p class="parent-info">contact info</p>
+                            <p id="phone" class="sub-info"></p>
+                        </div>
+                    </li>
+
+
+                    <li class="jessica-card__list-items--item">
+                        <img src="./assets/images/PhoneIcon.png" alt="phone icon">
+                        <div>
+                            <p class="parent-info">emergency contact</p>
+                            <p id="emergency" class="sub-info"></p>
+                        </div>
+                    </li>
+
+                    <li class="jessica-card__list-items--item">
+                        <img src="./assets/images/InsuranceIcon.png" alt="InsuranceIcon icon">
+                        <div>
+                            <p class="parent-info">insurance provider</p>
+                            <p id="insurance" class="sub-info"></p>
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="jessica-card__button">show all information</button>
+            </div>
+
+            <!-- LAB RESULTS -->
+            <div class="lab-results-card">
+                <h1 class="lab-results-card__header">lab results</h1>
+                <div class="lab-results-card__body">
+                    <ul class="list-items">
+                        <li class="list-items__item">
+                            <span class="list-items__item--text">blood test</span>
+                            <img src="./assets/svgs/download.svg" alt="download icon">
+                        </li>
+
+                        <li class="list-items__item list-items__item--active">
+                            <span class="list-items__item--text">blood test</span>
+                            <img src="./assets/svgs/download.svg" alt="download icon">
+                        </li>
+
+                        <li class="list-items__item">
+                            <span class="list-items__item--text">blood test</span>
+                            <img src="./assets/svgs/download.svg" alt="download icon">
+                        </li>
+
+                        <li class="list-items__item">
+                            <span class="list-items__item--text">blood test</span>
+                            <img src="./assets/svgs/download.svg" alt="download icon">
+                        </li>
+
+                        <li class="list-items__item">
+                            <span class="list-items__item--text">blood test</span>
+                            <img src="./assets/svgs/download.svg" alt="download icon">
+                        </li>
+
+                        <li class="list-items__item">
+                            <span class="list-items__item--text">blood test</span>
+                            <img src="./assets/svgs/download.svg" alt="download icon">
+                        </li>
+
+
+                        <li class="list-items__item">
+                            <span class="list-items__item--text">blood test</span>
+                            <img src="./assets/svgs/download.svg" alt="download icon">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  </body>
+</html>

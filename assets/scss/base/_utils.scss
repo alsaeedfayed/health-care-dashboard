@@ -1,0 +1,30 @@
+
+
+.col-middle{
+    margin-left: 3.6rem;
+}
+
+.col-right {
+    margin-left: 3.3rem;
+}
+
+::-webkit-scrollbar {
+    width: .6rem; 
+    height: 10rem;
+    background-color: #E3E4E6;
+    background-clip: content-box;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb:horizontal {
+    height: 10rem;
+   
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    background-color: $color_text_primary;
+    border-radius: 6px;
+    height: 2rem;
+    width: .6rem; 
+  }
+

@@ -1,0 +1,51 @@
+.patients-card {
+  @include Card;
+  min-width: 36.7rem;
+  height: 105.4rem;
+  margin-top: 3.2rem;
+  &__header {
+    @include centerContent;
+
+    &--title {
+      @include CardTitle;
+    }
+  }
+
+
+
+  .card-body-wrapper{
+    box-sizing: border-box;
+    margin: -2rem;
+    margin-top: 4rem;
+    height: 96rem;
+    overflow-y: scroll;
+  }
+
+  
+
+  &__body {
+   
+   margin: 2rem;
+
+    .patient {
+      @include centerContent;
+      margin-bottom: 3.5rem;
+
+      &__info {
+        @include centerContent;
+        gap: 1.2rem;
+
+        &--user-name {
+          @include Bold--14px;
+        }
+
+        &--details {
+          @include Secondary-info;
+        }
+      }
+
+      &__actions {
+      }
+    }
+  }
+}
